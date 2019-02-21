@@ -1,6 +1,6 @@
 <template>
   <div>
-    <VUserSearchForm />
+    <VUserSearchForm @submitted="searchUser" />
     <VUserProfile :user="user" />
   </div>
 </template>
@@ -15,6 +15,11 @@ export default {
   components: {
     VUserProfile,
     VUserSearchForm
+  },
+  methods: {
+    searchUser(username) {
+      this.$store.dispatch("SEARCH_USER", { username });
+    }
   },
   computed: {
     ...mapState({
