@@ -7,7 +7,7 @@
 
 <script>
 import { mapState } from "vuex";
-import VUserSearchForm from "@/components/VUserSearchform";
+import VUserSearchForm from "@/components/VUserSearchForm";
 import VUserProfile from "@/components/VUserProfile";
 
 export default {
